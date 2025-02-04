@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedPaint App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top bar with format selection, resolution, and frame rate -->
+        <header class="header">
+            <div class="title">SpeedPaint App</div>
+            <div class="controls">
+                <select id="videoFormat" class="format-select">
+                    <option value="16:9">16:9 (Horizontal)</option>
+                    <option value="9:16">9:16 (Vertical)</option>
+                </select>
+                <input type="range" id="frameRate" class="frame-rate" min="24" max="60" step="1" value="30">
+                <label for="frameRate">Frame Rate: <span id="frameRateValue">30</span> FPS</label>
+            </div>
+        </header>
+
+        <!-- Main Drawing Area -->
+        <div class="canvas-container">
+            <canvas id="drawingCanvas"></canvas>
+        </div>
+
+        <!-- Toolbar for brushes, layers, etc. -->
+        <div class="toolbar">
+            <button id="brushTool">Brush</button>
+            <button id="eraserTool">Eraser</button>
+            <button id="undoTool">Undo</button>
+            <button id="clearCanvas">Clear</button>
+        </div>
+
+        <!-- Export Options -->
+        <footer class="footer">
+            <button id="exportButton">Export Video</button>
+            <button id="shareButton">Share</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                                            </html>
+                                            
